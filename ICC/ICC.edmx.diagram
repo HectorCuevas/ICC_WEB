@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="43e089285e054b7da873dea2fcd18e37" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="ICCModel.TRX_DYR_Plantilla_Detalle_Cuenca" Width="2.625" PointX="3.375" PointY="1.125" />
+        <EntityTypeShape EntityType="ICCModel.TRX_DYR_Plantilla_Detalle_Seccion" Width="1.5" PointX="8.2355569788420375" PointY="21.010054508694473" />
+        <EntityTypeShape EntityType="ICCModel.TRX_DYR_Movil" Width="1.5" PointX="3.4228819922650615" PointY="21.187122012110017" />
+        <EntityTypeShape EntityType="ICCModel.TRX_DYR_Movil_Detalle" Width="2.375" PointX="3.375" PointY="2.875" />
+        <EntityTypeShape EntityType="ICCModel.TRX_Solicitud_Detalle_Cuenca" Width="1.5" PointX="8.375" PointY="2.125" />
+        <EntityTypeShape EntityType="ICCModel.TRX_Solicitud_Detalle_Seccion" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="ICCModel.TRX_Solicitud" Width="1.5" PointX="8.2875965164450918" PointY="21.270563418637291" />
+        <EntityTypeShape EntityType="ICCModel.CAT_STD_Boletin" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ICCModel.TRX_DYR_Movil_YoReporto" Width="2.25" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ICCModel.VW_Plantilla_Movil" Width="1.5" PointX="3.375" PointY="6.75" />
+        <EntityTypeShape EntityType="ICCModel.CAT_STD_Municipio" Width="1.5" PointX="6.375" PointY="4.75" />
+        <EntityTypeShape EntityType="ICCModel.TRX_DYR_Plantilla_Encabezado" Width="1.5" PointX="5.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

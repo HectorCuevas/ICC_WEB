@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ICCModelStoreContainer" CdmEntityContainer="ICCEntities">
+    <EntitySetMapping Name="TRX_DYR_Plantilla_Detalle_Cuenca">
+      <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Plantilla_Detalle_Cuenca">
+        <MappingFragment StoreEntitySet="TRX_DYR_Plantilla_Detalle_Cuenca">
+          <ScalarProperty Name="SubCuentaRio_ID" ColumnName="SubCuentaRio_ID" />
+          <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+          <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX_DYR_Plantilla_Detalle_Seccion">
+      <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Plantilla_Detalle_Seccion">
+        <MappingFragment StoreEntitySet="TRX_DYR_Plantilla_Detalle_Seccion">
+          <ScalarProperty Name="SubSeccion_ID" ColumnName="SubSeccion_ID" />
+          <ScalarProperty Name="Seccion_ID" ColumnName="Seccion_ID" />
+          <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="xSpCuencas" FunctionName="ICCModel.Store.xSpCuencas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSpCuencas_Result">
+          <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+          <ScalarProperty Name="Cuenca_DSC" ColumnName="Cuenca_DSC" />
+          <ScalarProperty Name="SubCuencaRio_ID" ColumnName="SubCuencaRio_ID" />
+          <ScalarProperty Name="SubCuencaRio_DSC" ColumnName="SubCuencaRio_DSC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xSpSecciones" FunctionName="ICCModel.Store.xSpSecciones">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSpSecciones_Result">
+          <ScalarProperty Name="Seccion_ID" ColumnName="Seccion_ID" />
+          <ScalarProperty Name="Seccion_DSC" ColumnName="Seccion_DSC" />
+          <ScalarProperty Name="SubSeccion_ID" ColumnName="SubSeccion_ID" />
+          <ScalarProperty Name="SubSeccion_DSC" ColumnName="SubSeccion_DSC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xSpCrearPlantilla" FunctionName="ICCModel.Store.xSpCrearPlantilla" />
+    <EntitySetMapping Name="TRX_DYR_Movil">
+      <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Movil">
+        <MappingFragment StoreEntitySet="TRX_DYR_Movil">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Estado_ID" ColumnName="Estado_ID" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="FotografiaSur" ColumnName="FotografiaSur" />
+          <ScalarProperty Name="FotografiaNorte" ColumnName="FotografiaNorte" />
+          <ScalarProperty Name="GpsLongitud" ColumnName="GpsLongitud" />
+          <ScalarProperty Name="GpsLatitud" ColumnName="GpsLatitud" />
+          <ScalarProperty Name="FechaHoraFinal" ColumnName="FechaHoraFinal" />
+          <ScalarProperty Name="FechaHoraInicial" ColumnName="FechaHoraInicial" />
+          <ScalarProperty Name="Tipologia_ID" ColumnName="Tipologia_ID" />
+          <ScalarProperty Name="TipoMedicion_ID" ColumnName="TipoMedicion_ID" />
+          <ScalarProperty Name="ModeloMolinete_ID" ColumnName="ModeloMolinete_ID" />
+          <ScalarProperty Name="PuntoMonitoreo_ID" ColumnName="PuntoMonitoreo_ID" />
+          <ScalarProperty Name="SubCuencaRio_ID" ColumnName="SubCuencaRio_ID" />
+          <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX_DYR_Movil_Detalle">
+      <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Movil_Detalle">
+        <MappingFragment StoreEntitySet="TRX_DYR_Movil_Detalle">
+          <ScalarProperty Name="Caudal" ColumnName="Caudal" />
+          <ScalarProperty Name="Velocidad" ColumnName="Velocidad" />
+          <ScalarProperty Name="Revoluciones" ColumnName="Revoluciones" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="SectorMetros" ColumnName="SectorMetros" />
+          <ScalarProperty Name="MedicionBaseFinal" ColumnName="MedicionBaseFinal" />
+          <ScalarProperty Name="MedicionBaseInicial" ColumnName="MedicionBaseInicial" />
+          <ScalarProperty Name="NoCorrelativo" ColumnName="NoCorrelativo" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="xSpBuscarInformacionCuenca" FunctionName="ICCModel.Store.xSpBuscarInformacionCuenca">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSpBuscarInformacionCuenca_Result">
+          <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+          <ScalarProperty Name="SubCuencaRio_ID" ColumnName="SubCuencaRio_ID" />
+          <ScalarProperty Name="PuntoMonitoreo_ID" ColumnName="PuntoMonitoreo_ID" />
+          <ScalarProperty Name="ModeloMolinete_ID" ColumnName="ModeloMolinete_ID" />
+          <ScalarProperty Name="TipoMedicion_ID" ColumnName="TipoMedicion_ID" />
+          <ScalarProperty Name="Tipologia_ID" ColumnName="Tipologia_ID" />
+          <ScalarProperty Name="Estado_ID" ColumnName="Estado_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TRX_Solicitud_Detalle_Cuenca">
+      <EntityTypeMapping TypeName="ICCModel.TRX_Solicitud_Detalle_Cuenca">
+        <MappingFragment StoreEntitySet="TRX_Solicitud_Detalle_Cuenca">
+          <ScalarProperty Name="SubCuentaRio_ID" ColumnName="SubCuentaRio_ID" />
+          <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+          <ScalarProperty Name="Solicitud_ID" ColumnName="Solicitud_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX_Solicitud_Detalle_Seccion">
+      <EntityTypeMapping TypeName="ICCModel.TRX_Solicitud_Detalle_Seccion">
+        <MappingFragment StoreEntitySet="TRX_Solicitud_Detalle_Seccion">
+          <ScalarProperty Name="SubSeccion_ID" ColumnName="SubSeccion_ID" />
+          <ScalarProperty Name="Seccion_ID" ColumnName="Seccion_ID" />
+          <ScalarProperty Name="Solicitud_ID" ColumnName="Solicitud_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX_Solicitud">
+      <EntityTypeMapping TypeName="ICCModel.TRX_Solicitud">
+        <MappingFragment StoreEntitySet="TRX_Solicitud">
+          <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+          <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+          <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+          <ScalarProperty Name="Estado_ID" ColumnName="Estado_ID" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="NombresApellidos" ColumnName="NombresApellidos" />
+          <ScalarProperty Name="Organizacion_ID" ColumnName="Organizacion_ID" />
+          <ScalarProperty Name="Solicitud_ID" ColumnName="Solicitud_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_STD_Boletin">
+      <EntityTypeMapping TypeName="ICCModel.CAT_STD_Boletin">
+        <MappingFragment StoreEntitySet="CAT_STD_Boletin">
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+          <ScalarProperty Name="NombreDocumento" ColumnName="NombreDocumento" />
+          <ScalarProperty Name="CodigoTipoBoletin" ColumnName="CodigoTipoBoletin" />
+          <ScalarProperty Name="CodigoBoletin" ColumnName="CodigoBoletin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX_DYR_Movil_YoReporto">
+      <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Movil_YoReporto">
+        <MappingFragment StoreEntitySet="TRX_DYR_Movil_YoReporto">
+          <ScalarProperty Name="Emei" ColumnName="Emei" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="GpsLongitud" ColumnName="GpsLongitud" />
+          <ScalarProperty Name="GpsLatitud" ColumnName="GpsLatitud" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+          <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+          <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+          <ScalarProperty Name="TipoReporte_ID" ColumnName="TipoReporte_ID" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="FechaHoraInicial" ColumnName="FechaHoraInicial" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="xSpBuscarInformacionYoReporto" FunctionName="ICCModel.Store.xSpBuscarInformacionYoReporto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSpBuscarInformacionYoReporto_Result">
+          <ScalarProperty Name="TipoReporte_ID" ColumnName="TipoReporte_ID" />
+          <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+          <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xSPAccesos" FunctionName="ICCModel.Store.xSPAccesos" />
+    <EntitySetMapping Name="VW_Plantilla_Movil">
+      <EntityTypeMapping TypeName="ICCModel.VW_Plantilla_Movil">
+        <MappingFragment StoreEntitySet="VW_Plantilla_Movil">
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Prefijo" ColumnName="Prefijo" />
+          <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_STD_Municipio">
+      <EntityTypeMapping TypeName="ICCModel.CAT_STD_Municipio">
+        <MappingFragment StoreEntitySet="CAT_STD_Municipio">
+          <ScalarProperty Name="Municipio_DSC" ColumnName="Municipio_DSC" />
+          <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+          <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRX_DYR_Plantilla_Encabezado">
+      <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Plantilla_Encabezado">
+        <MappingFragment StoreEntitySet="TRX_DYR_Plantilla_Encabezado">
+          <ScalarProperty Name="Organizacion_ID" ColumnName="Organizacion_ID" />
+          <ScalarProperty Name="DYR_DSC" ColumnName="DYR_DSC" />
+          <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="xSpHtml" FunctionName="ICCModel.Store.xSpHtml">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSpHtml_Result">
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Html" ColumnName="Html" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xSPPermisos" FunctionName="ICCModel.Store.xSPPermisos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSPPermisos_Result">
+          <ScalarProperty Name="Seccion" ColumnName="Seccion" />
+          <ScalarProperty Name="Pagina" ColumnName="Pagina" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xSpHtmlRecuperacion" FunctionName="ICCModel.Store.xSpHtmlRecuperacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ICCModel.xSpHtmlRecuperacion_Result">
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Html" ColumnName="Html" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

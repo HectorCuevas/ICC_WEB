@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>ICC-Instituto privado de investigación sobre cambio climático</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body style="width:100%">
+        <div id="scene"></div>
+
+        <div id="policy">
+            <div>
+                <iframe src="privacy-policy.html"></iframe>
+                <div id="hide-policy-btn" class="close-btn"></div>
+            </div>
+        </div>
+
+        <div id="social-links">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            ICC &copy; 2017
+            <ul id="policy-btns"><li><a id="show-policy-btn" href="privacy-policy.html">Politica de privacidad</a></li></ul>
+        </div>
+
+        <script src="js/three.min.js"></script>
+
+        <script src="js/main.min.js"></script>
+
+        <script type="text/javascript">
+            var perfecto = new Perfecto.App('scene', 'img/map.png');
+            perfecto.setLinks([
+                {"text": "Agua superficial", "url": "about-us.html"},
+                {"text": "Agua subterranea", "url": "new-services.html"},
+                {"text": "Boletines", "url": "our-clients.html"},
+                null,                 
+                {"text": "Opciones administrativas", "url": "opc-admon.html"},
+                {"text": "Mapa semaforo", "url": "photo-gallery.html"},
+                {"text": "redmet", "url": "procedures.html"},
+                {"text": "Sismasur", "url": "opc-admon.html"},
+                {"text": "ICC", "url": "about-us.html"},                
+            ]);
+
+          // Set logo text and position
+            <!-- perfecto.setLogo(3, 'ICC', 'Instituto privado de investigación sobre cambio climático'); -->
+        </script>
+    </body>
+</html>

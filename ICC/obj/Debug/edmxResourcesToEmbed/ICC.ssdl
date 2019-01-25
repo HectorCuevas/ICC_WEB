@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ICCModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ICCModelStoreContainer">
+    <EntitySet Name="CAT_STD_Boletin" EntityType="ICCModel.Store.CAT_STD_Boletin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CAT_STD_Municipio" EntityType="ICCModel.Store.CAT_STD_Municipio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_DYR_Movil" EntityType="ICCModel.Store.TRX_DYR_Movil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_DYR_Movil_Detalle" EntityType="ICCModel.Store.TRX_DYR_Movil_Detalle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_DYR_Movil_YoReporto" EntityType="ICCModel.Store.TRX_DYR_Movil_YoReporto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_DYR_Plantilla_Detalle_Cuenca" EntityType="ICCModel.Store.TRX_DYR_Plantilla_Detalle_Cuenca" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_DYR_Plantilla_Detalle_Seccion" EntityType="ICCModel.Store.TRX_DYR_Plantilla_Detalle_Seccion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_DYR_Plantilla_Encabezado" EntityType="ICCModel.Store.TRX_DYR_Plantilla_Encabezado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_Solicitud" EntityType="ICCModel.Store.TRX_Solicitud" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_Solicitud_Detalle_Cuenca" EntityType="ICCModel.Store.TRX_Solicitud_Detalle_Cuenca" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TRX_Solicitud_Detalle_Seccion" EntityType="ICCModel.Store.TRX_Solicitud_Detalle_Seccion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VW_Plantilla_Movil" EntityType="ICCModel.Store.VW_Plantilla_Movil" store:Type="Views" store:Schema="dbo" store:Name="VW_Plantilla_Movil">
+      <DefiningQuery>SELECT 
+      [VW_Plantilla_Movil].[Tabla] AS [Tabla], 
+      [VW_Plantilla_Movil].[Prefijo] AS [Prefijo], 
+      [VW_Plantilla_Movil].[Descripcion] AS [Descripcion], 
+      [VW_Plantilla_Movil].[Orden] AS [Orden]
+      FROM [dbo].[VW_Plantilla_Movil] AS [VW_Plantilla_Movil]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="CAT_STD_Boletin">
+    <Key>
+      <PropertyRef Name="CodigoBoletin" />
+    </Key>
+    <Property Name="CodigoBoletin" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoTipoBoletin" Type="int" />
+    <Property Name="NombreDocumento" Type="varchar" MaxLength="100" />
+    <Property Name="FechaPublicacion" Type="datetime" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="NombreArchivo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CAT_STD_Municipio">
+    <Key>
+      <PropertyRef Name="Municipio_ID" />
+    </Key>
+    <Property Name="Municipio_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Departamento_ID" Type="int" />
+    <Property Name="Municipio_DSC" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TRX_DYR_Movil">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Cuenca_ID" Type="int" Nullable="false" />
+    <Property Name="SubCuencaRio_ID" Type="int" Nullable="false" />
+    <Property Name="PuntoMonitoreo_ID" Type="int" Nullable="false" />
+    <Property Name="ModeloMolinete_ID" Type="int" Nullable="false" />
+    <Property Name="TipoMedicion_ID" Type="int" Nullable="false" />
+    <Property Name="Tipologia_ID" Type="int" Nullable="false" />
+    <Property Name="FechaHoraInicial" Type="datetime" />
+    <Property Name="FechaHoraFinal" Type="datetime" />
+    <Property Name="GpsLatitud" Type="decimal" Nullable="false" Scale="10" />
+    <Property Name="GpsLongitud" Type="decimal" Nullable="false" Scale="10" />
+    <Property Name="FotografiaNorte" Type="image" />
+    <Property Name="FotografiaSur" Type="image" />
+    <Property Name="Comentario" Type="varchar" MaxLength="200" />
+    <Property Name="Caudal" Type="decimal" Scale="10" />
+    <Property Name="Estado_ID" Type="int" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TRX_DYR_Movil_Detalle">
+    <Key>
+      <PropertyRef Name="Codigo" />
+      <PropertyRef Name="NoCorrelativo" />
+    </Key>
+    <Property Name="Codigo" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NoCorrelativo" Type="int" Nullable="false" />
+    <Property Name="MedicionBaseInicial" Type="decimal" Scale="6" />
+    <Property Name="MedicionBaseFinal" Type="decimal" Scale="6" />
+    <Property Name="SectorMetros" Type="decimal" Scale="6" />
+    <Property Name="Area" Type="decimal" Scale="6" />
+    <Property Name="Revoluciones" Type="decimal" Scale="6" />
+    <Property Name="Velocidad" Type="decimal" Scale="6" />
+    <Property Name="Caudal" Type="decimal" Scale="6" />
+  </EntityType>
+  <EntityType Name="TRX_DYR_Movil_YoReporto">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FechaHoraInicial" Type="datetime" />
+    <Property Name="Usuario" Type="varchar" MaxLength="100" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono" Type="varchar" MaxLength="100" />
+    <Property Name="Correo" Type="varchar" MaxLength="200" />
+    <Property Name="TipoReporte_ID" Type="int" />
+    <Property Name="Departamento_ID" Type="int" />
+    <Property Name="Municipio_ID" Type="int" />
+    <Property Name="Barrio" Type="varchar" MaxLength="200" />
+    <Property Name="Direccion" Type="varchar" MaxLength="200" />
+    <Property Name="Comentarios" Type="varchar" MaxLength="200" />
+    <Property Name="GpsLatitud" Type="decimal" Scale="10" />
+    <Property Name="GpsLongitud" Type="decimal" Scale="10" />
+    <Property Name="Imagen" Type="image" />
+    <Property Name="Emei" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TRX_DYR_Plantilla_Detalle_Cuenca">
+    <Key>
+      <PropertyRef Name="DYR_ID" />
+      <PropertyRef Name="Cuenca_ID" />
+      <PropertyRef Name="SubCuentaRio_ID" />
+    </Key>
+    <Property Name="DYR_ID" Type="int" Nullable="false" />
+    <Property Name="Cuenca_ID" Type="int" Nullable="false" />
+    <Property Name="SubCuentaRio_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRX_DYR_Plantilla_Detalle_Seccion">
+    <Key>
+      <PropertyRef Name="DYR_ID" />
+      <PropertyRef Name="Seccion_ID" />
+      <PropertyRef Name="SubSeccion_ID" />
+    </Key>
+    <Property Name="DYR_ID" Type="int" Nullable="false" />
+    <Property Name="Seccion_ID" Type="int" Nullable="false" />
+    <Property Name="SubSeccion_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRX_DYR_Plantilla_Encabezado">
+    <Key>
+      <PropertyRef Name="DYR_ID" />
+    </Key>
+    <Property Name="DYR_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DYR_DSC" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Organizacion_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRX_Solicitud">
+    <Key>
+      <PropertyRef Name="Solicitud_ID" />
+    </Key>
+    <Property Name="Solicitud_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Organizacion_ID" Type="int" Nullable="false" />
+    <Property Name="Departamento_ID" Type="int" />
+    <Property Name="Municipio_ID" Type="int" />
+    <Property Name="NombresApellidos" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CorreoElectronico" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Contrasena" Type="varchar" MaxLength="100" />
+    <Property Name="Estado_ID" Type="int" Nullable="false" />
+    <Property Name="DYR_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="TRX_Solicitud_Detalle_Cuenca">
+    <Key>
+      <PropertyRef Name="Solicitud_ID" />
+      <PropertyRef Name="Cuenca_ID" />
+      <PropertyRef Name="SubCuentaRio_ID" />
+    </Key>
+    <Property Name="Solicitud_ID" Type="int" Nullable="false" />
+    <Property Name="Cuenca_ID" Type="int" Nullable="false" />
+    <Property Name="SubCuentaRio_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRX_Solicitud_Detalle_Seccion">
+    <Key>
+      <PropertyRef Name="Solicitud_ID" />
+      <PropertyRef Name="Seccion_ID" />
+      <PropertyRef Name="SubSeccion_ID" />
+    </Key>
+    <Property Name="Solicitud_ID" Type="int" Nullable="false" />
+    <Property Name="Seccion_ID" Type="int" Nullable="false" />
+    <Property Name="SubSeccion_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'icc.dbo.VW_Plantilla_Movil' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VW_Plantilla_Movil">
+    <Key>
+      <PropertyRef Name="Tabla" />
+      <PropertyRef Name="Prefijo" />
+    </Key>
+    <Property Name="Tabla" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="Prefijo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="Orden" Type="bigint" />
+  </EntityType>
+  <Function Name="xSPAccesos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Uri" Type="nvarchar" Mode="In" />
+    <Parameter Name="Usuario_ID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="xSpBuscarInformacionCuenca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Guid_ID" Type="varchar" Mode="In" />
+    <Parameter Name="Cuenca_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="SubCuencaRio_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="PuntoMonitoreo_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="ModeloMolinete_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="TipoMedicion_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="Tipologia_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="Estado_DSC" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="xSpBuscarInformacionYoReporto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TipoReporte_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="Departamento_DSC" Type="varchar" Mode="In" />
+    <Parameter Name="Municipio_DSC" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="xSpCrearPlantilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pTRXID" Type="int" Mode="In" />
+    <Parameter Name="pSubCuencas" Type="varchar(max)" Mode="In" />
+    <Parameter Name="pSubSecciones" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="xSpCuencas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="xSpHtml" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pSolicitudID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="xSpHtmlRecuperacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CorreoElectronico" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="xSPPermisos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CorreoElectronico" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="xSpSecciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

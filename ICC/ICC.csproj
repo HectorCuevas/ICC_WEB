@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F82B5B21-98B1-4E0D-9D95-252CE4582B46}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ICC</RootNamespace>
+    <AssemblyName>ICC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Web, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Catalogo\BoletinMetereologico.aspx" />
+    <Content Include="Catalogo\BoletinNivelesDeRio.aspx" />
+    <Content Include="Catalogo\BoletinRiesgo.aspx" />
+    <Content Include="Catalogo\BoletinGeneral.aspx" />
+    <Content Include="Catalogo\BoletinInformeMonitoreo.aspx" />
+    <Content Include="Catalogo\BoletinClimatico.aspx" />
+    <Content Include="Catalogo\BoletinNivelFriatico.aspx" />
+    <Content Include="Catalogo\BoletinCaudalEstimado.aspx" />
+    <Content Include="Catalogo\BoletinOtrosPdf.aspx" />
+    <Content Include="Catalogo\Departamento.aspx" />
+    <Content Include="Catalogo\Municipio.aspx" />
+    <Content Include="Catalogo\TipoReporte.aspx" />
+    <Content Include="Contenido\about-us.html" />
+    <Content Include="App_Data\SideMenu.xml" />
+    <Content Include="App_Data\TopMenu.xml" />
+    <Content Include="ASPxScriptIntelliSense.js" />
+    <Content Include="Contenido\bat\phpmailer\class.phpmailer.php" />
+    <Content Include="Contenido\bat\phpmailer\class.pop3.php" />
+    <Content Include="Contenido\bat\phpmailer\class.smtp.php" />
+    <Content Include="Contenido\bat\phpmailer\PHPMailerAutoload.php" />
+    <Content Include="Contenido\bat\rd-mailform.php" />
+    <Content Include="Catalogo\Boletin.aspx" />
+    <Content Include="Catalogo\InformeMonitoreo.aspx" />
+    <Content Include="Catalogo\Cuenca.aspx" />
+    <Content Include="Catalogo\ModeloMolinete.aspx" />
+    <Content Include="Catalogo\Organizacion.aspx" />
+    <Content Include="Catalogo\PuntoMonitoreo.aspx" />
+    <Content Include="Catalogo\Seccion.aspx" />
+    <Content Include="Catalogo\SubCuenca.aspx" />
+    <Content Include="Catalogo\SubSeccion.aspx" />
+    <Content Include="Catalogo\Tipologia.aspx" />
+    <Content Include="Catalogo\TipoMedicion.aspx" />
+    <Content Include="Contenido\contacts.html" />
+    <Content Include="Content\ICC.png" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\jquery-1.9.1.min.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\x_map.png" />
+    <Content Include="Control\Aprobar.aspx" />
+    <Content Include="Control\ControlCalidad.aspx" />
+    <Content Include="Control\General.aspx" />
+    <Content Include="Control\Plantilla.aspx" />
+    <Content Include="Contenido\css\bootstrap.min.css" />
+    <Content Include="Contenido\css\font-awesome.min.css" />
+    <Content Include="Contenido\css\main.css" />
+    <Content Include="Contenido\css\page.css" />
+    <Content Include="Contenido\css\simplegrid.css" />
+    <Content Include="Control\Solicitud.aspx" />
+    <Content Include="Cuenta\Inicio.aspx" />
+    <Content Include="Cuenta\Solicitud.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Contenido\fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Contenido\hot-offers.html" />
+    <Content Include="Contenido\img\gallery\photo1.jpg" />
+    <Content Include="Contenido\img\gallery\photo2.jpg" />
+    <Content Include="Contenido\img\gallery\photo3.jpg" />
+    <Content Include="Contenido\img\gallery\photo4.jpg" />
+    <Content Include="Contenido\img\map.png" />
+    <Content Include="Contenido\img\nav-left.png" />
+    <Content Include="Contenido\img\nav-right.png" />
+    <Content Include="Contenido\img\page\linda-w.jpg" />
+    <Content Include="Contenido\img\page\logo icc sin fondo.png" />
+    <Content Include="Contenido\img\page\lora-black-md.jpg" />
+    <Content Include="Contenido\img\page\martha-b.jpg" />
+    <Content Include="Contenido\img\page\martin-smith-md.jpg" />
+    <Content Include="Contenido\img\page\plastic-discount.jpg" />
+    <Content Include="Contenido\img\page\samantha-k.jpg" />
+    <Content Include="Contenido\img\page\specialties.jpg" />
+    <Content Include="Contenido\img\quotes.png" />
+    <Content Include="Contenido\index.html" />
+    <Content Include="Contenido\js\bootstrap-3.3.7.min.js" />
+    <Content Include="Contenido\js\forms.min.js" />
+    <Content Include="Contenido\js\jquery-3.1.0.min.js" />
+    <Content Include="Contenido\js\main.min.js" />
+    <Content Include="Contenido\js\three.min.js" />
+    <Content Include="Contenido\new-services.html" />
+    <Content Include="Contenido\opc-admon.html" />
+    <Content Include="Contenido\our-clients.html" />
+    <Content Include="Contenido\our-staff.html" />
+    <Content Include="Contenido\photo-gallery.html" />
+    <Content Include="Contenido\privacy-policy.html" />
+    <Content Include="Contenido\procedures.html" />
+    <Content Include="Reporte\Estacion.aspx" />
+    <Content Include="Reporte\Mapas.aspx" />
+    <Content Include="Reporte\PuntoMonitoreo.aspx" />
+    <Content Include="Reporte\Derivaciones.aspx" />
+    <Content Include="Reporte\YoReporto.aspx" />
+    <Content Include="Validaciones.aspx" />
+    <Content Include="WsSincronizacion.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICC.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ICC.edmx</DependentUpon>
+      <LastGenOutput>ICC.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ICC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ICC.edmx</DependentUpon>
+      <LastGenOutput>ICC.cs</LastGenOutput>
+    </Content>
+    <Content Include="JavaScript1.js" />
+    <Content Include="Light.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Root.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EntityDeploy Include="ICC.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ICC.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ICC.edmx.diagram">
+      <DependentUpon>ICC.edmx</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Control\Web.config" />
+    <Content Include="Contenido\fonts\fontawesome-webfont.eot" />
+    <Content Include="Contenido\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Contenido\fonts\fontawesome-webfont.woff" />
+    <Content Include="Contenido\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Contenido\fonts\FontAwesome.otf" />
+    <Content Include="Contenido\bat\rd-mailform.tpl" />
+    <Content Include="Catalogo\Web.config" />
+    <Content Include="Kml\achiguate.kmz" />
+    <Content Include="Kml\acomé.kmz" />
+    <Content Include="Kml\coyolate.kmz" />
+    <Content Include="Kml\Los_Esclavos.kmz" />
+    <Content Include="Kml\madre_vieja.kmz" />
+    <Content Include="Kml\María_Linda.kmz" />
+    <Content Include="Kml\nahualate.kmz" />
+    <Content Include="Kml\Naranjo_2.kmz" />
+    <Content Include="Kml\Ococito.kmz" />
+    <Content Include="Kml\Paso_Ondo.kmz" />
+    <Content Include="Kml\Ríos_VERTIENTE PACIFICO.KMZ" />
+    <Content Include="Kml\Samalá.kmz" />
+    <Content Include="Kml\Sis_Icán.kmz" />
+    <None Include="Properties\PublishProfiles\ICC.pubxml" />
+    <Content Include="Reporte\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogo\Boletin.aspx.cs">
+      <DependentUpon>Boletin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Boletin.aspx.designer.cs">
+      <DependentUpon>Boletin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinMetereologico.aspx.cs">
+      <DependentUpon>BoletinMetereologico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinMetereologico.aspx.designer.cs">
+      <DependentUpon>BoletinMetereologico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinNivelesDeRio.aspx.cs">
+      <DependentUpon>BoletinNivelesDeRio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinNivelesDeRio.aspx.designer.cs">
+      <DependentUpon>BoletinNivelesDeRio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinRiesgo.aspx.cs">
+      <DependentUpon>BoletinRiesgo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinRiesgo.aspx.designer.cs">
+      <DependentUpon>BoletinRiesgo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinGeneral.aspx.cs">
+      <DependentUpon>BoletinGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinGeneral.aspx.designer.cs">
+      <DependentUpon>BoletinGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinInformeMonitoreo.aspx.cs">
+      <DependentUpon>BoletinInformeMonitoreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinInformeMonitoreo.aspx.designer.cs">
+      <DependentUpon>BoletinInformeMonitoreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinClimatico.aspx.cs">
+      <DependentUpon>BoletinClimatico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinClimatico.aspx.designer.cs">
+      <DependentUpon>BoletinClimatico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinNivelFriatico.aspx.cs">
+      <DependentUpon>BoletinNivelFriatico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinNivelFriatico.aspx.designer.cs">
+      <DependentUpon>BoletinNivelFriatico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinCaudalEstimado.aspx.cs">
+      <DependentUpon>BoletinCaudalEstimado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinCaudalEstimado.aspx.designer.cs">
+      <DependentUpon>BoletinCaudalEstimado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\BoletinOtrosPdf.aspx.cs">
+      <DependentUpon>BoletinOtrosPdf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\BoletinOtrosPdf.aspx.designer.cs">
+      <DependentUpon>BoletinOtrosPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Departamento.aspx.cs">
+      <DependentUpon>Departamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Departamento.aspx.designer.cs">
+      <DependentUpon>Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\InformeMonitoreo.aspx.cs">
+      <DependentUpon>InformeMonitoreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\InformeMonitoreo.aspx.designer.cs">
+      <DependentUpon>InformeMonitoreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Cuenca.aspx.cs">
+      <DependentUpon>Cuenca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Cuenca.aspx.designer.cs">
+      <DependentUpon>Cuenca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\ModeloMolinete.aspx.cs">
+      <DependentUpon>ModeloMolinete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\ModeloMolinete.aspx.designer.cs">
+      <DependentUpon>ModeloMolinete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Municipio.aspx.cs">
+      <DependentUpon>Municipio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Municipio.aspx.designer.cs">
+      <DependentUpon>Municipio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Organizacion.aspx.cs">
+      <DependentUpon>Organizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Organizacion.aspx.designer.cs">
+      <DependentUpon>Organizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\PuntoMonitoreo.aspx.cs">
+      <DependentUpon>PuntoMonitoreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\PuntoMonitoreo.aspx.designer.cs">
+      <DependentUpon>PuntoMonitoreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Seccion.aspx.cs">
+      <DependentUpon>Seccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Seccion.aspx.designer.cs">
+      <DependentUpon>Seccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\SubCuenca.aspx.cs">
+      <DependentUpon>SubCuenca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\SubCuenca.aspx.designer.cs">
+      <DependentUpon>SubCuenca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\SubSeccion.aspx.cs">
+      <DependentUpon>SubSeccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\SubSeccion.aspx.designer.cs">
+      <DependentUpon>SubSeccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\Tipologia.aspx.cs">
+      <DependentUpon>Tipologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\Tipologia.aspx.designer.cs">
+      <DependentUpon>Tipologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\TipoMedicion.aspx.cs">
+      <DependentUpon>TipoMedicion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\TipoMedicion.aspx.designer.cs">
+      <DependentUpon>TipoMedicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\TipoReporte.aspx.cs">
+      <DependentUpon>TipoReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogo\TipoReporte.aspx.designer.cs">
+      <DependentUpon>TipoReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_STD_Boletin.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_STD_Municipio.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Aprobar.aspx.cs">
+      <DependentUpon>Aprobar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Aprobar.aspx.designer.cs">
+      <DependentUpon>Aprobar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ControlCalidad.aspx.cs">
+      <DependentUpon>ControlCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\ControlCalidad.aspx.designer.cs">
+      <DependentUpon>ControlCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\General.aspx.cs">
+      <DependentUpon>General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\General.aspx.designer.cs">
+      <DependentUpon>General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Plantilla.aspx.cs">
+      <DependentUpon>Plantilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Plantilla.aspx.designer.cs">
+      <DependentUpon>Plantilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Solicitud.aspx.cs">
+      <DependentUpon>Solicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Solicitud.aspx.designer.cs">
+      <DependentUpon>Solicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Solicitud.aspx.cs">
+      <DependentUpon>Solicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Solicitud.aspx.designer.cs">
+      <DependentUpon>Solicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ICC.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ICC.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ICC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ICC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ICC.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursos\CAT_Plantilla_Movil.cs" />
+    <Compile Include="Recursos\cTransaccion.cs" />
+    <Compile Include="Recursos\cTransaccionDet.cs" />
+    <Compile Include="Recursos\IccEnvio.cs" />
+    <Compile Include="Recursos\IccReporte.cs" />
+    <Compile Include="Recursos\IccTran.cs" />
+    <Compile Include="Recursos\LMap.cs" />
+    <Compile Include="Recursos\YoReporto.cs" />
+    <Compile Include="Reporte\Estacion.aspx.cs">
+      <DependentUpon>Estacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Estacion.aspx.designer.cs">
+      <DependentUpon>Estacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Mapas.aspx.cs">
+      <DependentUpon>Mapas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Mapas.aspx.designer.cs">
+      <DependentUpon>Mapas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\PuntoMonitoreo.aspx.cs">
+      <DependentUpon>PuntoMonitoreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\PuntoMonitoreo.aspx.designer.cs">
+      <DependentUpon>PuntoMonitoreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\Derivaciones.aspx.cs">
+      <DependentUpon>Derivaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\Derivaciones.aspx.designer.cs">
+      <DependentUpon>Derivaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\YoReporto.aspx.cs">
+      <DependentUpon>YoReporto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\YoReporto.aspx.designer.cs">
+      <DependentUpon>YoReporto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_DYR_Movil.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_DYR_Movil_Detalle.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_DYR_Movil_YoReporto.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_DYR_Plantilla_Detalle_Cuenca.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_DYR_Plantilla_Detalle_Seccion.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_DYR_Plantilla_Encabezado.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_Solicitud.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_Solicitud_Detalle_Cuenca.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRX_Solicitud_Detalle_Seccion.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Validaciones.aspx.cs">
+      <DependentUpon>Validaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validaciones.aspx.designer.cs">
+      <DependentUpon>Validaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VW_Plantilla_Movil.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WsSincronizacion.asmx.cs">
+      <DependentUpon>WsSincronizacion.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xSpBuscarInformacionCuenca_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xSpBuscarInformacionYoReporto_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xSpCuencas_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xSpHtmlRecuperacion_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xSpHtml_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xSPPermisos_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="xSpSecciones_Result.cs">
+      <DependentUpon>ICC.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50997/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

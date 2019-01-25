@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <item Text="Inicio">
+    <item Text="Inicio" NavigateUrl="~/Cuenta/Inicio.aspx" />
+    <item Text="Solicitud" NavigateUrl="~/Cuenta/Solicitud.aspx" />    
+  </item>
+  <item Text="Control">
+    <item Text="Control de Aprobar" NavigateUrl="~/Control/Aprobar.aspx" />
+    <item Text="Control de Plantilla" NavigateUrl="~/Control/Plantilla.aspx" />
+  </item>
+  <item Text="Catalogo">
+    <item Text="Cuenca" NavigateUrl="~/Catalogo/Cuenca.aspx" />
+    <item Text="Boletin" NavigateUrl="~/Catalogo/Boletin.aspx" />
+    <item Text="Modelo Molinete" NavigateUrl="~/Catalogo/ModeloMolinete.aspx" />
+    <item Text="Organizacion" NavigateUrl="~/Catalogo/Organizacion.aspx" />
+    <item Text="Punto Monitorio" NavigateUrl="~/Catalogo/PuntoMonitoreo.aspx" />
+    <item Text="Seccion" NavigateUrl="~/Catalogo/Seccion.aspx" />
+    <item Text="Sub Cuenca" NavigateUrl="~/Catalogo/SubCuenca.aspx" />
+    <item Text="Sub Seccion" NavigateUrl="~/Catalogo/SubSeccion.aspx" />
+    <item Text="Tipologia" NavigateUrl="~/Catalogo/Tipologia.aspx" />
+    <item Text="Tipo Medicion" NavigateUrl="~/Catalogo/TipoMedicion.aspx" />   
+  </item>
+  <item Text="Control Calidad">
+    <item Text="Listado General" NavigateUrl="~/Control/General.aspx" />
+  </item>
+  <item Text="Reportes" >
+    <item Text="Reporte" NavigateUrl="~/Reporte/Mapa.aspx" />
+  </item>
+</items>

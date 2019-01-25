@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ICCModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ICCModelStoreContainer">
+          <EntitySet Name="CAT_STD_Boletin" EntityType="ICCModel.Store.CAT_STD_Boletin" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CAT_STD_Municipio" EntityType="ICCModel.Store.CAT_STD_Municipio" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_DYR_Movil" EntityType="ICCModel.Store.TRX_DYR_Movil" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_DYR_Movil_Detalle" EntityType="ICCModel.Store.TRX_DYR_Movil_Detalle" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_DYR_Movil_YoReporto" EntityType="ICCModel.Store.TRX_DYR_Movil_YoReporto" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_DYR_Plantilla_Detalle_Cuenca" EntityType="ICCModel.Store.TRX_DYR_Plantilla_Detalle_Cuenca" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_DYR_Plantilla_Detalle_Seccion" EntityType="ICCModel.Store.TRX_DYR_Plantilla_Detalle_Seccion" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_DYR_Plantilla_Encabezado" EntityType="ICCModel.Store.TRX_DYR_Plantilla_Encabezado" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_Solicitud" EntityType="ICCModel.Store.TRX_Solicitud" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_Solicitud_Detalle_Cuenca" EntityType="ICCModel.Store.TRX_Solicitud_Detalle_Cuenca" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRX_Solicitud_Detalle_Seccion" EntityType="ICCModel.Store.TRX_Solicitud_Detalle_Seccion" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VW_Plantilla_Movil" EntityType="ICCModel.Store.VW_Plantilla_Movil" store:Type="Views" store:Schema="dbo" store:Name="VW_Plantilla_Movil">
+            <DefiningQuery>SELECT 
+      [VW_Plantilla_Movil].[Tabla] AS [Tabla], 
+      [VW_Plantilla_Movil].[Prefijo] AS [Prefijo], 
+      [VW_Plantilla_Movil].[Descripcion] AS [Descripcion], 
+      [VW_Plantilla_Movil].[Orden] AS [Orden]
+      FROM [dbo].[VW_Plantilla_Movil] AS [VW_Plantilla_Movil]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="CAT_STD_Boletin">
+          <Key>
+            <PropertyRef Name="CodigoBoletin" />
+          </Key>
+          <Property Name="CodigoBoletin" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoTipoBoletin" Type="int" />
+          <Property Name="NombreDocumento" Type="varchar" MaxLength="100" />
+          <Property Name="FechaPublicacion" Type="datetime" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+          <Property Name="NombreArchivo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CAT_STD_Municipio">
+          <Key>
+            <PropertyRef Name="Municipio_ID" />
+          </Key>
+          <Property Name="Municipio_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Departamento_ID" Type="int" />
+          <Property Name="Municipio_DSC" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Movil">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Cuenca_ID" Type="int" Nullable="false" />
+          <Property Name="SubCuencaRio_ID" Type="int" Nullable="false" />
+          <Property Name="PuntoMonitoreo_ID" Type="int" Nullable="false" />
+          <Property Name="ModeloMolinete_ID" Type="int" Nullable="false" />
+          <Property Name="TipoMedicion_ID" Type="int" Nullable="false" />
+          <Property Name="Tipologia_ID" Type="int" Nullable="false" />
+          <Property Name="FechaHoraInicial" Type="datetime" />
+          <Property Name="FechaHoraFinal" Type="datetime" />
+          <Property Name="GpsLatitud" Type="decimal" Nullable="false" Scale="10" />
+          <Property Name="GpsLongitud" Type="decimal" Nullable="false" Scale="10" />
+          <Property Name="FotografiaNorte" Type="image" />
+          <Property Name="FotografiaSur" Type="image" />
+          <Property Name="Comentario" Type="varchar" MaxLength="200" />
+          <Property Name="Caudal" Type="decimal" Scale="10" />
+          <Property Name="Estado_ID" Type="int" Nullable="false" />
+          <Property Name="Usuario" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Movil_Detalle">
+          <Key>
+            <PropertyRef Name="Codigo" />
+            <PropertyRef Name="NoCorrelativo" />
+          </Key>
+          <Property Name="Codigo" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="NoCorrelativo" Type="int" Nullable="false" />
+          <Property Name="MedicionBaseInicial" Type="decimal" Scale="6" />
+          <Property Name="MedicionBaseFinal" Type="decimal" Scale="6" />
+          <Property Name="SectorMetros" Type="decimal" Scale="6" />
+          <Property Name="Area" Type="decimal" Scale="6" />
+          <Property Name="Revoluciones" Type="decimal" Scale="6" />
+          <Property Name="Velocidad" Type="decimal" Scale="6" />
+          <Property Name="Caudal" Type="decimal" Scale="6" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Movil_YoReporto">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FechaHoraInicial" Type="datetime" />
+          <Property Name="Usuario" Type="varchar" MaxLength="100" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" />
+          <Property Name="Telefono" Type="varchar" MaxLength="100" />
+          <Property Name="Correo" Type="varchar" MaxLength="200" />
+          <Property Name="TipoReporte_ID" Type="int" />
+          <Property Name="Departamento_ID" Type="int" />
+          <Property Name="Municipio_ID" Type="int" />
+          <Property Name="Barrio" Type="varchar" MaxLength="200" />
+          <Property Name="Direccion" Type="varchar" MaxLength="200" />
+          <Property Name="Comentarios" Type="varchar" MaxLength="200" />
+          <Property Name="GpsLatitud" Type="decimal" Scale="10" />
+          <Property Name="GpsLongitud" Type="decimal" Scale="10" />
+          <Property Name="Imagen" Type="image" />
+          <Property Name="Emei" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Plantilla_Detalle_Cuenca">
+          <Key>
+            <PropertyRef Name="DYR_ID" />
+            <PropertyRef Name="Cuenca_ID" />
+            <PropertyRef Name="SubCuentaRio_ID" />
+          </Key>
+          <Property Name="DYR_ID" Type="int" Nullable="false" />
+          <Property Name="Cuenca_ID" Type="int" Nullable="false" />
+          <Property Name="SubCuentaRio_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Plantilla_Detalle_Seccion">
+          <Key>
+            <PropertyRef Name="DYR_ID" />
+            <PropertyRef Name="Seccion_ID" />
+            <PropertyRef Name="SubSeccion_ID" />
+          </Key>
+          <Property Name="DYR_ID" Type="int" Nullable="false" />
+          <Property Name="Seccion_ID" Type="int" Nullable="false" />
+          <Property Name="SubSeccion_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Plantilla_Encabezado">
+          <Key>
+            <PropertyRef Name="DYR_ID" />
+          </Key>
+          <Property Name="DYR_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DYR_DSC" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Organizacion_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_Solicitud">
+          <Key>
+            <PropertyRef Name="Solicitud_ID" />
+          </Key>
+          <Property Name="Solicitud_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Organizacion_ID" Type="int" Nullable="false" />
+          <Property Name="Departamento_ID" Type="int" />
+          <Property Name="Municipio_ID" Type="int" />
+          <Property Name="NombresApellidos" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="CorreoElectronico" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Contrasena" Type="varchar" MaxLength="100" />
+          <Property Name="Estado_ID" Type="int" Nullable="false" />
+          <Property Name="DYR_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="TRX_Solicitud_Detalle_Cuenca">
+          <Key>
+            <PropertyRef Name="Solicitud_ID" />
+            <PropertyRef Name="Cuenca_ID" />
+            <PropertyRef Name="SubCuentaRio_ID" />
+          </Key>
+          <Property Name="Solicitud_ID" Type="int" Nullable="false" />
+          <Property Name="Cuenca_ID" Type="int" Nullable="false" />
+          <Property Name="SubCuentaRio_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_Solicitud_Detalle_Seccion">
+          <Key>
+            <PropertyRef Name="Solicitud_ID" />
+            <PropertyRef Name="Seccion_ID" />
+            <PropertyRef Name="SubSeccion_ID" />
+          </Key>
+          <Property Name="Solicitud_ID" Type="int" Nullable="false" />
+          <Property Name="Seccion_ID" Type="int" Nullable="false" />
+          <Property Name="SubSeccion_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'icc.dbo.VW_Plantilla_Movil' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_Plantilla_Movil">
+          <Key>
+            <PropertyRef Name="Tabla" />
+            <PropertyRef Name="Prefijo" />
+          </Key>
+          <Property Name="Tabla" Type="varchar" Nullable="false" MaxLength="14" />
+          <Property Name="Prefijo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+          <Property Name="Orden" Type="bigint" />
+        </EntityType>
+        <Function Name="xSPAccesos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Uri" Type="nvarchar" Mode="In" />
+          <Parameter Name="Usuario_ID" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="xSpBuscarInformacionCuenca" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Guid_ID" Type="varchar" Mode="In" />
+          <Parameter Name="Cuenca_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="SubCuencaRio_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="PuntoMonitoreo_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="ModeloMolinete_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="TipoMedicion_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="Tipologia_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="Estado_DSC" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="xSpBuscarInformacionYoReporto" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TipoReporte_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="Departamento_DSC" Type="varchar" Mode="In" />
+          <Parameter Name="Municipio_DSC" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="xSpCrearPlantilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="pTRXID" Type="int" Mode="In" />
+          <Parameter Name="pSubCuencas" Type="varchar(max)" Mode="In" />
+          <Parameter Name="pSubSecciones" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="xSpCuencas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="xSpHtml" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="pSolicitudID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="xSpHtmlRecuperacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CorreoElectronico" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="xSPPermisos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CorreoElectronico" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="xSpSecciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ICCModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ICCEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="TRX_DYR_Plantilla_Detalle_Cuenca" EntityType="ICCModel.TRX_DYR_Plantilla_Detalle_Cuenca" />
+          <EntitySet Name="TRX_DYR_Plantilla_Detalle_Seccion" EntityType="ICCModel.TRX_DYR_Plantilla_Detalle_Seccion" />
+          <FunctionImport Name="xSpCuencas" ReturnType="Collection(ICCModel.xSpCuencas_Result)" />
+          <FunctionImport Name="xSpSecciones" ReturnType="Collection(ICCModel.xSpSecciones_Result)" />
+          <FunctionImport Name="xSpCrearPlantilla">
+            <Parameter Name="pTRXID" Mode="In" Type="Int32" />
+            <Parameter Name="pSubCuencas" Mode="In" Type="String" />
+            <Parameter Name="pSubSecciones" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="TRX_DYR_Movil" EntityType="ICCModel.TRX_DYR_Movil" />
+          <EntitySet Name="TRX_DYR_Movil_Detalle" EntityType="ICCModel.TRX_DYR_Movil_Detalle" />
+          <EntitySet Name="TRX_Solicitud_Detalle_Cuenca" EntityType="ICCModel.TRX_Solicitud_Detalle_Cuenca" />
+          <EntitySet Name="TRX_Solicitud_Detalle_Seccion" EntityType="ICCModel.TRX_Solicitud_Detalle_Seccion" />
+          <EntitySet Name="TRX_Solicitud" EntityType="ICCModel.TRX_Solicitud" />
+          <EntitySet Name="CAT_STD_Boletin" EntityType="ICCModel.CAT_STD_Boletin" />
+          <EntitySet Name="TRX_DYR_Movil_YoReporto" EntityType="ICCModel.TRX_DYR_Movil_YoReporto" />
+          <FunctionImport Name="xSpBuscarInformacionYoReporto" ReturnType="Collection(ICCModel.xSpBuscarInformacionYoReporto_Result)">
+            <Parameter Name="TipoReporte_DSC" Mode="In" Type="String" />
+            <Parameter Name="Departamento_DSC" Mode="In" Type="String" />
+            <Parameter Name="Municipio_DSC" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="xSPAccesos" ReturnType="Collection(Int32)">
+            <Parameter Name="Uri" Mode="In" Type="String" />
+            <Parameter Name="Usuario_ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="VW_Plantilla_Movil" EntityType="ICCModel.VW_Plantilla_Movil" />
+          <EntitySet Name="CAT_STD_Municipio" EntityType="ICCModel.CAT_STD_Municipio" />
+          <EntitySet Name="TRX_DYR_Plantilla_Encabezado" EntityType="ICCModel.TRX_DYR_Plantilla_Encabezado" />
+          <FunctionImport Name="xSpHtml" ReturnType="Collection(ICCModel.xSpHtml_Result)">
+          <Parameter Name="pSolicitudID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="xSPPermisos" ReturnType="Collection(ICCModel.xSPPermisos_Result)">
+          <Parameter Name="CorreoElectronico" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="xSpHtmlRecuperacion" ReturnType="Collection(ICCModel.xSpHtmlRecuperacion_Result)">
+          <Parameter Name="CorreoElectronico" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="xSpBuscarInformacionCuenca" ReturnType="Collection(ICCModel.xSpBuscarInformacionCuenca_Result)">
+            <Parameter Name="Guid_ID" Mode="In" Type="String" />
+            <Parameter Name="Cuenca_DSC" Mode="In" Type="String" />
+            <Parameter Name="SubCuencaRio_DSC" Mode="In" Type="String" />
+            <Parameter Name="PuntoMonitoreo_DSC" Mode="In" Type="String" />
+            <Parameter Name="ModeloMolinete_DSC" Mode="In" Type="String" />
+            <Parameter Name="TipoMedicion_DSC" Mode="In" Type="String" />
+            <Parameter Name="Tipologia_DSC" Mode="In" Type="String" />
+            <Parameter Name="Estado_DSC" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="TRX_DYR_Plantilla_Detalle_Cuenca">
+          <Key>
+            <PropertyRef Name="DYR_ID" />
+            <PropertyRef Name="Cuenca_ID" />
+            <PropertyRef Name="SubCuentaRio_ID" />
+          </Key>
+          <Property Type="Int32" Name="DYR_ID" Nullable="false" />
+          <Property Type="Int32" Name="Cuenca_ID" Nullable="false" />
+          <Property Type="Int32" Name="SubCuentaRio_ID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Plantilla_Detalle_Seccion">
+          <Key>
+            <PropertyRef Name="DYR_ID" />
+            <PropertyRef Name="Seccion_ID" />
+            <PropertyRef Name="SubSeccion_ID" />
+          </Key>
+          <Property Type="Int32" Name="DYR_ID" Nullable="false" />
+          <Property Type="Int32" Name="Seccion_ID" Nullable="false" />
+          <Property Type="Int32" Name="SubSeccion_ID" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="xSpCuencas_Result">
+          <Property Type="Int32" Name="Cuenca_ID" Nullable="false" />
+          <Property Type="String" Name="Cuenca_DSC" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="SubCuencaRio_ID" Nullable="false" />
+          <Property Type="String" Name="SubCuencaRio_DSC" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="xSpSecciones_Result">
+          <Property Type="Int32" Name="Seccion_ID" Nullable="false" />
+          <Property Type="String" Name="Seccion_DSC" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="SubSeccion_ID" Nullable="false" />
+          <Property Type="String" Name="SubSeccion_DSC" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <EntityType Name="TRX_DYR_Movil">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Type="Guid" Name="Codigo" Nullable="false" />
+          <Property Type="Int32" Name="Cuenca_ID" Nullable="false" />
+          <Property Type="Int32" Name="SubCuencaRio_ID" Nullable="false" />
+          <Property Type="Int32" Name="PuntoMonitoreo_ID" Nullable="false" />
+          <Property Type="Int32" Name="ModeloMolinete_ID" Nullable="false" />
+          <Property Type="Int32" Name="TipoMedicion_ID" Nullable="false" />
+          <Property Type="Int32" Name="Tipologia_ID" Nullable="false" />
+          <Property Type="DateTime" Name="FechaHoraInicial" Precision="3" />
+          <Property Type="DateTime" Name="FechaHoraFinal" Precision="3" />
+          <Property Type="Decimal" Name="GpsLatitud" Nullable="false" Precision="18" Scale="10" />
+          <Property Type="Decimal" Name="GpsLongitud" Nullable="false" Precision="18" Scale="10" />
+          <Property Type="Binary" Name="FotografiaNorte" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="FotografiaSur" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="Comentario" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Estado_ID" Nullable="false" />
+          <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Caudal" Precision="18" Scale="10" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Movil_Detalle">
+          <Key>
+            <PropertyRef Name="Codigo" />
+            <PropertyRef Name="NoCorrelativo" />
+          </Key>
+          <Property Type="Guid" Name="Codigo" Nullable="false" />
+          <Property Type="Int32" Name="NoCorrelativo" Nullable="false" />
+          <Property Type="Decimal" Name="MedicionBaseInicial" Precision="18" Scale="6" />
+          <Property Type="Decimal" Name="MedicionBaseFinal" Precision="18" Scale="6" />
+          <Property Type="Decimal" Name="SectorMetros" Precision="18" Scale="6" />
+          <Property Type="Decimal" Name="Area" Precision="18" Scale="6" />
+          <Property Type="Decimal" Name="Revoluciones" Precision="18" Scale="6" />
+          <Property Type="Decimal" Name="Velocidad" Precision="18" Scale="6" />
+          <Property Type="Decimal" Name="Caudal" Precision="18" Scale="6" />
+        </EntityType>
+        <EntityType Name="TRX_Solicitud_Detalle_Cuenca">
+          <Key>
+            <PropertyRef Name="Solicitud_ID" />
+            <PropertyRef Name="Cuenca_ID" />
+            <PropertyRef Name="SubCuentaRio_ID" />
+          </Key>
+          <Property Type="Int32" Name="Solicitud_ID" Nullable="false" />
+          <Property Type="Int32" Name="Cuenca_ID" Nullable="false" />
+          <Property Type="Int32" Name="SubCuentaRio_ID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_Solicitud_Detalle_Seccion">
+          <Key>
+            <PropertyRef Name="Solicitud_ID" />
+            <PropertyRef Name="Seccion_ID" />
+            <PropertyRef Name="SubSeccion_ID" />
+          </Key>
+          <Property Type="Int32" Name="Solicitud_ID" Nullable="false" />
+          <Property Type="Int32" Name="Seccion_ID" Nullable="false" />
+          <Property Type="Int32" Name="SubSeccion_ID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRX_Solicitud">
+          <Key>
+            <PropertyRef Name="Solicitud_ID" />
+          </Key>
+          <Property Type="Int32" Name="Solicitud_ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="Organizacion_ID" Nullable="false" />
+          <Property Type="String" Name="NombresApellidos" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CorreoElectronico" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Contrasena" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Estado_ID" Nullable="false" />
+          <Property Name="Departamento_ID" Type="Int32" />
+          <Property Name="Municipio_ID" Type="Int32" />
+          <Property Name="DYR_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CAT_STD_Boletin">
+          <Key>
+            <PropertyRef Name="CodigoBoletin" />
+          </Key>
+          <Property Name="CodigoBoletin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoTipoBoletin" Type="Int32" />
+          <Property Name="NombreDocumento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FechaPublicacion" Type="DateTime" Precision="3" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="NombreArchivo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Movil_YoReporto">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="Guid" Nullable="false" />
+          <Property Name="FechaHoraInicial" Type="DateTime" Precision="3" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Correo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="TipoReporte_ID" Type="Int32" />
+          <Property Name="Departamento_ID" Type="Int32" />
+          <Property Name="Municipio_ID" Type="Int32" />
+          <Property Name="Barrio" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Comentarios" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="GpsLatitud" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="GpsLongitud" Type="Decimal" Precision="18" Scale="10" />
+          <Property Name="Imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Emei" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="xSpBuscarInformacionYoReporto_Result">
+          <Property Type="Int32" Name="TipoReporte_ID" Nullable="true" />
+          <Property Type="Int32" Name="Departamento_ID" Nullable="true" />
+          <Property Type="Int32" Name="Municipio_ID" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="VW_Plantilla_Movil">
+          <Key>
+            <PropertyRef Name="Tabla" />
+            <PropertyRef Name="Prefijo" />
+          </Key>
+          <Property Name="Tabla" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="Prefijo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Orden" Type="Int64" />
+        </EntityType>
+        <EntityType Name="CAT_STD_Municipio">
+          <Key>
+            <PropertyRef Name="Municipio_ID" />
+          </Key>
+          <Property Name="Municipio_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Departamento_ID" Type="Int32" />
+          <Property Name="Municipio_DSC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TRX_DYR_Plantilla_Encabezado">
+          <Key>
+            <PropertyRef Name="DYR_ID" />
+          </Key>
+          <Property Name="DYR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DYR_DSC" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Organizacion_ID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="xSpHtml_Result">
+          <Property Type="String" Name="Correo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Html" Nullable="true" MaxLength="536" />
+        </ComplexType>
+        <ComplexType Name="xSPPermisos_Result">
+          <Property Type="String" Name="Seccion" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Pagina" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="xSpHtmlRecuperacion_Result">
+          <Property Type="String" Name="Correo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Html" Nullable="true" MaxLength="312" />
+        </ComplexType>
+        <ComplexType Name="xSpBuscarInformacionCuenca_Result">
+          <Property Type="Int32" Name="Cuenca_ID" Nullable="true" />
+          <Property Type="Int32" Name="SubCuencaRio_ID" Nullable="true" />
+          <Property Type="Int32" Name="PuntoMonitoreo_ID" Nullable="true" />
+          <Property Type="Int32" Name="ModeloMolinete_ID" Nullable="true" />
+          <Property Type="Int32" Name="TipoMedicion_ID" Nullable="true" />
+          <Property Type="Int32" Name="Tipologia_ID" Nullable="true" />
+          <Property Type="Int32" Name="Estado_ID" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ICCModelStoreContainer" CdmEntityContainer="ICCEntities">
+          <EntitySetMapping Name="TRX_DYR_Plantilla_Detalle_Cuenca">
+            <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Plantilla_Detalle_Cuenca">
+              <MappingFragment StoreEntitySet="TRX_DYR_Plantilla_Detalle_Cuenca">
+                <ScalarProperty Name="SubCuentaRio_ID" ColumnName="SubCuentaRio_ID" />
+                <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+                <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_DYR_Plantilla_Detalle_Seccion">
+            <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Plantilla_Detalle_Seccion">
+              <MappingFragment StoreEntitySet="TRX_DYR_Plantilla_Detalle_Seccion">
+                <ScalarProperty Name="SubSeccion_ID" ColumnName="SubSeccion_ID" />
+                <ScalarProperty Name="Seccion_ID" ColumnName="Seccion_ID" />
+                <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="xSpCuencas" FunctionName="ICCModel.Store.xSpCuencas">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSpCuencas_Result">
+                <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+                <ScalarProperty Name="Cuenca_DSC" ColumnName="Cuenca_DSC" />
+                <ScalarProperty Name="SubCuencaRio_ID" ColumnName="SubCuencaRio_ID" />
+                <ScalarProperty Name="SubCuencaRio_DSC" ColumnName="SubCuencaRio_DSC" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="xSpSecciones" FunctionName="ICCModel.Store.xSpSecciones">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSpSecciones_Result">
+                <ScalarProperty Name="Seccion_ID" ColumnName="Seccion_ID" />
+                <ScalarProperty Name="Seccion_DSC" ColumnName="Seccion_DSC" />
+                <ScalarProperty Name="SubSeccion_ID" ColumnName="SubSeccion_ID" />
+                <ScalarProperty Name="SubSeccion_DSC" ColumnName="SubSeccion_DSC" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="xSpCrearPlantilla" FunctionName="ICCModel.Store.xSpCrearPlantilla" />
+          <EntitySetMapping Name="TRX_DYR_Movil">
+            <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Movil">
+              <MappingFragment StoreEntitySet="TRX_DYR_Movil">
+                <ScalarProperty Name="Caudal" ColumnName="Caudal" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Estado_ID" ColumnName="Estado_ID" />
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="FotografiaSur" ColumnName="FotografiaSur" />
+                <ScalarProperty Name="FotografiaNorte" ColumnName="FotografiaNorte" />
+                <ScalarProperty Name="GpsLongitud" ColumnName="GpsLongitud" />
+                <ScalarProperty Name="GpsLatitud" ColumnName="GpsLatitud" />
+                <ScalarProperty Name="FechaHoraFinal" ColumnName="FechaHoraFinal" />
+                <ScalarProperty Name="FechaHoraInicial" ColumnName="FechaHoraInicial" />
+                <ScalarProperty Name="Tipologia_ID" ColumnName="Tipologia_ID" />
+                <ScalarProperty Name="TipoMedicion_ID" ColumnName="TipoMedicion_ID" />
+                <ScalarProperty Name="ModeloMolinete_ID" ColumnName="ModeloMolinete_ID" />
+                <ScalarProperty Name="PuntoMonitoreo_ID" ColumnName="PuntoMonitoreo_ID" />
+                <ScalarProperty Name="SubCuencaRio_ID" ColumnName="SubCuencaRio_ID" />
+                <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_DYR_Movil_Detalle">
+            <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Movil_Detalle">
+              <MappingFragment StoreEntitySet="TRX_DYR_Movil_Detalle">
+                <ScalarProperty Name="Caudal" ColumnName="Caudal" />
+                <ScalarProperty Name="Velocidad" ColumnName="Velocidad" />
+                <ScalarProperty Name="Revoluciones" ColumnName="Revoluciones" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="SectorMetros" ColumnName="SectorMetros" />
+                <ScalarProperty Name="MedicionBaseFinal" ColumnName="MedicionBaseFinal" />
+                <ScalarProperty Name="MedicionBaseInicial" ColumnName="MedicionBaseInicial" />
+                <ScalarProperty Name="NoCorrelativo" ColumnName="NoCorrelativo" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_Solicitud_Detalle_Cuenca">
+            <EntityTypeMapping TypeName="ICCModel.TRX_Solicitud_Detalle_Cuenca">
+              <MappingFragment StoreEntitySet="TRX_Solicitud_Detalle_Cuenca">
+                <ScalarProperty Name="SubCuentaRio_ID" ColumnName="SubCuentaRio_ID" />
+                <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+                <ScalarProperty Name="Solicitud_ID" ColumnName="Solicitud_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_Solicitud_Detalle_Seccion">
+            <EntityTypeMapping TypeName="ICCModel.TRX_Solicitud_Detalle_Seccion">
+              <MappingFragment StoreEntitySet="TRX_Solicitud_Detalle_Seccion">
+                <ScalarProperty Name="SubSeccion_ID" ColumnName="SubSeccion_ID" />
+                <ScalarProperty Name="Seccion_ID" ColumnName="Seccion_ID" />
+                <ScalarProperty Name="Solicitud_ID" ColumnName="Solicitud_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_Solicitud">
+            <EntityTypeMapping TypeName="ICCModel.TRX_Solicitud">
+              <MappingFragment StoreEntitySet="TRX_Solicitud">
+                <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+                <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+                <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+                <ScalarProperty Name="Estado_ID" ColumnName="Estado_ID" />
+                <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+                <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+                <ScalarProperty Name="NombresApellidos" ColumnName="NombresApellidos" />
+                <ScalarProperty Name="Organizacion_ID" ColumnName="Organizacion_ID" />
+                <ScalarProperty Name="Solicitud_ID" ColumnName="Solicitud_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CAT_STD_Boletin">
+            <EntityTypeMapping TypeName="ICCModel.CAT_STD_Boletin">
+              <MappingFragment StoreEntitySet="CAT_STD_Boletin">
+                <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+                <ScalarProperty Name="NombreDocumento" ColumnName="NombreDocumento" />
+                <ScalarProperty Name="CodigoTipoBoletin" ColumnName="CodigoTipoBoletin" />
+                <ScalarProperty Name="CodigoBoletin" ColumnName="CodigoBoletin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_DYR_Movil_YoReporto">
+            <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Movil_YoReporto">
+              <MappingFragment StoreEntitySet="TRX_DYR_Movil_YoReporto">
+                <ScalarProperty Name="Emei" ColumnName="Emei" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+                <ScalarProperty Name="GpsLongitud" ColumnName="GpsLongitud" />
+                <ScalarProperty Name="GpsLatitud" ColumnName="GpsLatitud" />
+                <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+                <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+                <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+                <ScalarProperty Name="TipoReporte_ID" ColumnName="TipoReporte_ID" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="FechaHoraInicial" ColumnName="FechaHoraInicial" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="xSpBuscarInformacionYoReporto" FunctionName="ICCModel.Store.xSpBuscarInformacionYoReporto">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSpBuscarInformacionYoReporto_Result">
+                <ScalarProperty Name="TipoReporte_ID" ColumnName="TipoReporte_ID" />
+                <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+                <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="xSPAccesos" FunctionName="ICCModel.Store.xSPAccesos" />
+          <EntitySetMapping Name="VW_Plantilla_Movil">
+            <EntityTypeMapping TypeName="ICCModel.VW_Plantilla_Movil">
+              <MappingFragment StoreEntitySet="VW_Plantilla_Movil">
+                <ScalarProperty Name="Orden" ColumnName="Orden" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Prefijo" ColumnName="Prefijo" />
+                <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CAT_STD_Municipio">
+            <EntityTypeMapping TypeName="ICCModel.CAT_STD_Municipio">
+              <MappingFragment StoreEntitySet="CAT_STD_Municipio">
+                <ScalarProperty Name="Municipio_DSC" ColumnName="Municipio_DSC" />
+                <ScalarProperty Name="Departamento_ID" ColumnName="Departamento_ID" />
+                <ScalarProperty Name="Municipio_ID" ColumnName="Municipio_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRX_DYR_Plantilla_Encabezado">
+            <EntityTypeMapping TypeName="ICCModel.TRX_DYR_Plantilla_Encabezado">
+              <MappingFragment StoreEntitySet="TRX_DYR_Plantilla_Encabezado">
+                <ScalarProperty Name="Organizacion_ID" ColumnName="Organizacion_ID" />
+                <ScalarProperty Name="DYR_DSC" ColumnName="DYR_DSC" />
+                <ScalarProperty Name="DYR_ID" ColumnName="DYR_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="xSpHtml" FunctionName="ICCModel.Store.xSpHtml">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSpHtml_Result">
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Html" ColumnName="Html" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="xSPPermisos" FunctionName="ICCModel.Store.xSPPermisos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSPPermisos_Result">
+                <ScalarProperty Name="Seccion" ColumnName="Seccion" />
+                <ScalarProperty Name="Pagina" ColumnName="Pagina" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="xSpHtmlRecuperacion" FunctionName="ICCModel.Store.xSpHtmlRecuperacion">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSpHtmlRecuperacion_Result">
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Html" ColumnName="Html" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="xSpBuscarInformacionCuenca" FunctionName="ICCModel.Store.xSpBuscarInformacionCuenca">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ICCModel.xSpBuscarInformacionCuenca_Result">
+                <ScalarProperty Name="Cuenca_ID" ColumnName="Cuenca_ID" />
+                <ScalarProperty Name="SubCuencaRio_ID" ColumnName="SubCuencaRio_ID" />
+                <ScalarProperty Name="PuntoMonitoreo_ID" ColumnName="PuntoMonitoreo_ID" />
+                <ScalarProperty Name="ModeloMolinete_ID" ColumnName="ModeloMolinete_ID" />
+                <ScalarProperty Name="TipoMedicion_ID" ColumnName="TipoMedicion_ID" />
+                <ScalarProperty Name="Tipologia_ID" ColumnName="Tipologia_ID" />
+                <ScalarProperty Name="Estado_ID" ColumnName="Estado_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

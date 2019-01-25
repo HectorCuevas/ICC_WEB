@@ -1,0 +1,217 @@
+c:\users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ICC.dll
+c:\users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ICC.pdb
+c:\users\kevin\documents\visual studio 2012\Projects\ICC\ICC\obj\Debug\ICC.csprojResolveAssemblyReference.cache
+c:\users\kevin\documents\visual studio 2012\Projects\ICC\ICC\obj\Debug\ICC.dll.licenses
+c:\users\kevin\documents\visual studio 2012\Projects\ICC\ICC\obj\Debug\ICC.dll
+c:\users\kevin\documents\visual studio 2012\Projects\ICC\ICC\obj\Debug\ICC.pdb
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Data.v16.1.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Web.v16.1.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Data.v16.1.xml
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\DevExpress.Web.v16.1.xml
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\EntityFramework.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\EntityFramework.xml
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\Newtonsoft.Json.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\System.Net.Http.Formatting.dll
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\Newtonsoft.Json.xml
+C:\Users\kevin\documents\visual studio 2012\Projects\ICC\ICC\bin\System.Net.Http.Formatting.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\obj\Debug\ICC.csprojResolveAssemblyReference.cache
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\obj\Debug\ICC.dll.licenses
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ICC.dll.config
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ICC.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ICC.pdb
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Charts.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Data.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.PivotGrid.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Utils.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Web.ASPxPivotGrid.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Web.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraCharts.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraCharts.v16.1.Web.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraEditors.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraPivotGrid.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraPrinting.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\EntityFramework.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\Newtonsoft.Json.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\System.Net.Http.Formatting.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraLayout.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraBars.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraTreeList.v16.1.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.PivotGrid.v16.1.Core.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Utils.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Web.ASPxPivotGrid.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraCharts.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraCharts.v16.1.Web.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraEditors.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraPivotGrid.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.XtraPrinting.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\EntityFramework.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\Newtonsoft.Json.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\System.Net.Http.Formatting.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Data.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Web.v16.1.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.PivotGrid.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Utils.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Utils.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Utils.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Utils.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraCharts.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraEditors.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraPivotGrid.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraLayout.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraBars.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.XtraTreeList.v16.1.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\obj\Debug\ICC.dll
+C:\Users\kevinramirez\Documents\Visual Studio 2015\Projects\ICC\ICC\obj\Debug\ICC.pdb
+C:\Users\kevin\Desktop\ICC\ICC\bin\ICC.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ICC.pdb
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Data.v16.1.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Web.v16.1.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\EntityFramework.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\Newtonsoft.Json.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\System.Net.Http.Formatting.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\EntityFramework.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\Newtonsoft.Json.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\System.Net.Http.Formatting.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Data.v16.1.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\DevExpress.Web.v16.1.xml
+C:\Users\kevin\Desktop\ICC\ICC\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\kevin\Desktop\ICC\ICC\obj\Debug\ICC.dll.licenses
+C:\Users\kevin\Desktop\ICC\ICC\obj\Debug\ICC.dll
+C:\Users\kevin\Desktop\ICC\ICC\obj\Debug\ICC.pdb
+C:\Users\kevin\Desktop\ICC\ICC\obj\Debug\ICC.csprojResolveAssemblyReference.cache
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\ICC.dll.config
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\ICC.dll
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\ICC.pdb
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\EntityFramework.dll
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\Newtonsoft.Json.dll
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\System.Net.Http.Formatting.dll
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\EntityFramework.xml
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\Newtonsoft.Json.xml
+C:\Users\kevinramirez\Desktop\ICC\ICC\bin\System.Net.Http.Formatting.xml
+C:\Users\kevinramirez\Desktop\ICC\ICC\obj\Debug\ICC.dll.licenses
+C:\Users\kevinramirez\Desktop\ICC\ICC\obj\Debug\ICC.dll
+C:\Users\kevinramirez\Desktop\ICC\ICC\obj\Debug\ICC.pdb
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\ICC.dll.config
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\ICC.dll
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\ICC.pdb
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\EntityFramework.dll
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\Newtonsoft.Json.dll
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\System.Net.Http.Formatting.dll
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\EntityFramework.xml
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\Newtonsoft.Json.xml
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\bin\System.Net.Http.Formatting.xml
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\obj\Debug\ICC.csprojResolveAssemblyReference.cache
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\obj\Debug\ICC.dll.licenses
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\obj\Debug\ICC.csproj.CoreCompileInputs.cache
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\obj\Debug\ICC.dll
+C:\Users\Norman\Documents\Xamarin Projects\ICC Resources\ICC\ICC\obj\Debug\ICC.pdb
